@@ -1,0 +1,32 @@
+EHR - Electronic Health Records
+
+1.Analytic Approach:
+The analytic approach for the problem statement is "Classification and decision tree".
+predicting the disease based on EHR - "decision tree"
+For classifying of disease according to the symptoms is "classification approach"
+
+2.Data Requirement:
+EHR data of patients with Disease-specific labeling.
+
+3.Data Collection:
+Hospitals, Doctors are responsible for Data Collection Methods. 
+Need to maintain accurate information with respect to patient-specific disease while maintaining EHR.
+
+4.Data Understanding and Preparation:
+One should have a clear understanding of the data to perform further analysis.EHR data should be recorded in a proper format with user friendly labels and a file with clear description of labels should be  documented for better understanding of the dataset.
+In the Data preparation stage one should basically check for null values or NA values, duplicates and missing values,Checking the Formats of data . We have to be careful while dealing with duplicates as the few symptoms of different diseases might be same for example fever is common for malaria and typhoid but the temperature and the duration of fever might change. For predictive approach, one must go through the feature that influence the results, for example feature extraction helps in reducing the dimensions of large datasets. 
+
+Generally the following are few main features of the data, 
+Patient Name,  
+Date, 
+Time, 
+Cause of Consultancy, 
+Symptoms,  
+Previous consulting History, 
+Diagnosis Tests (Previous Reports), 
+Prescribed Diagnosis (Present), 
+criticality of Condition,  
+Pharmacy Prescriptions, etc.
+
+5.Modeling and Evaluation:
+We have 2 case studies here one is to predict the disease based on EHR and the other is to classify the disease according to symptoms.The data is first divided into training ans test data sets.the training data set is given to the algorithm to get trained for different ML algorithms.Once the modeling is done, we move to the next step evaluation to determine the quality of the model.As we know about 2 stages of testing both descriptive and predictive models are evaluated to check the basic functionality of the algorithm, is it working properly to solve the problem ? the next phase to run the statistical testing of the performance. The algorithm which satisfies the evaluation methodologies can be considered as the proper algorithm to solve the problem. The feedback of the performance is taken after implementing the algorithm and if any changes are required, the changes will be implemented and the cycle repeats till we satisfy the conditions in the problem statement.
