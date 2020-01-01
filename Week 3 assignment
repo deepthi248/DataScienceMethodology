@@ -6,11 +6,14 @@ predicting the disease based on EHR - "decision tree"
 For classifying of disease according to the symptoms is "classification approach"
 
 2.Data Requirement:
-EHR data of patients with Disease-specific labeling.
-
 The EHR data of patients who visited doctors is required.
-The data should contain the following data
+EHR data of patients with different age groups, different symptoms,
+diagnostic details, test reports are required for further analysis of our case study. 
+The analyst should figure out differnt sources from which the data can be collected,
+its formats ,etc.
+The following are a few important details of the EHR data
 Patient Name,  
+Age,
 Date, 
 Time of consultation, 
 Symptoms,  
@@ -18,9 +21,9 @@ prescribed diagnosis,
 The criticality of Condition,  
 Pharmacy Prescriptions, etc.
 
+3.Data Collection:
 
-Data Collection:
-The EHR data is collected from different hospitals, clinics and online consultations. 
+The EHR data is collected from governament public sources, different hospitals, clinics and online consultations. 
 EHR data should be collected from the patient's first to the recent consultation, 
 the data should be accurate as the data is very sensitive. Many diseases have similar 
 symptoms which may differ in severity, timings, age of the patient, etc. The data collected 
