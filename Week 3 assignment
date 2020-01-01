@@ -21,29 +21,53 @@ prescribed diagnosis,
 The criticality of Condition,  
 Pharmacy Prescriptions, etc.
 
-3.Data Collection:
-
-The EHR data is collected from governament public sources, different hospitals, clinics and online consultations. 
+Data Collection:
+The EHR data is collected from different hospitals, clinics and online consultations. 
 EHR data should be collected from the patient's first to the recent consultation, 
-the data should be accurate as the data is very sensitive. Many diseases have similar 
-symptoms which may differ in severity, timings, age of the patient, etc. The data collected 
-should cover different cases with the same disease among different age groups,symptoms, etc.
+the data should be accurate as the data is very sensitive. Many diseases have similar
+symptoms which may differ in severity, timings, age of the patient, etc. 
+The data collected should cover different cases with the same disease among different age groups, symptoms, etc.
 
 4.Data Understanding and Preparation:
-The person should have a clear understanding of the business problem, 
-data collection and should take steps towards data preparation accordingly. 
-The data collected should represent a business problem. The data collected 
-should be related to diseases, symptoms, and diagnostics. The data collected 
-should be named under proper formats with user-friendly labels and should 
-have a text file describing the labels of the data collected for better understanding. 
-A statistical analysis that includes measuring mean, median, standard deviation,
+The person should have a clear understanding of the business problem, data collection 
+and should take steps towards data preparation accordingly. The data collected should 
+represent a business problem. The data collected should be related to diseases, symptoms, 
+and diagnostics. The data collected should be named under proper formats with user-friendly
+labels and should have a text file describing the labels of the data collected for better 
+understanding.  A statistical analysis that includes measuring mean, median, standard deviation, 
 correlation of feature should be carried out on different features available in the dataset, 
 visualization of data in different graphs helps in understanding the diversity of the data set. 
-In our case study, the graphs help us in understanding the data collected in different age groups,
+In this case study, the graphs help us in understanding the data collected in different age groups,
 symptoms, and diseases. Once a person understands the data well, the next step is data preparation. 
-The data collected might generally have a few common problems like having null or NA values, 
-missing values, duplicate values and checking the format of the data. These must be dealt with 
-before moving before drawing insights into the data collected. Once the basic problems mentioned 
-above are eliminated, further steps can be performed on the data like feature extraction,
-dimensionality reduction. etc, These steps help us to eliminate the features of the data which is the
-least priority and boosts the accuracy and efficiency of the analysis. 
+The data collected might generally have a few common problems like having null or NA values, missing values,
+duplicate values and checking the format of the data. These must be dealt with before moving before drawing
+insights into the data collected. Once the basic problems mentioned above are eliminated, further steps can
+be performed on the data like feature extraction, dimensionality reduction. etc,
+These steps help us to eliminate the features of the data which is the least priority and boosts the
+accuracy and efficiency of the analysis. 
+
+
+5.Modeling and Evaluation.
+Lets deep dive into different modeling techniques and their evaluation. Once the data is clean, 
+different prediction and classification models are applied to the data like decision trees, 
+regression techniques, neural networks, KNN, random forest, etc. are applied. 
+In our case study let us predict disease typhoid based on its symptoms.
+The common symptoms of malaria are fever, severe body pains, severe fatigue, headaches,
+retinal hemorrhages, chills before fever, diarrhea, etc. If a patient visits a doctor with 
+malaria can be classified according to a few main symptoms like retinal hemorrhages,
+chills frequency, body temperature, recent visits to malaria-prone areas. A patient with 
+typhoid has similar symptoms but varies in symptoms like abdominal pains, dry cough, malaria. etc,
+The algorithm is trained with the data which has pre- predicted data according to its symptoms of 
+the disease and also the data can be used in predicting the reoccurrence of the same disease based
+on the historic data. The more the algorithm gets trained based on different cases based on its age, 
+symptoms for exmaple: children show different fever patterns when compared to adults while suffering
+from malaria, constepation, muscle aches, and lab reports also plays key roles in predicting the disease. 
+The algorithm first checks the age of the patient and most frequent symptoms occurred for a particular
+disease and predicts the disease. The data should be divided randomly into 70:30 train and test data in 
+which the algorithm gets trained and test data is given to the algorithm to evaluate the accuracy of the algorithm
+. If the algorithm is having low accuracy levels, the features must be properly chosen by carrying proper
+feature engineering techniques, sometimes the training data size might be the cause of algorithm functionality failure.
+The data must be large enough covering all the different causes of the disease symptoms for better prediction. 
+Once the analyst is satisfied with the results of the algorithm it is ready for deployment else the data science
+methodology process should be carried out again from step1 and necessary changes should be carried out based on
+previous results.
