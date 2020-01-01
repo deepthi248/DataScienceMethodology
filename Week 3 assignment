@@ -8,25 +8,39 @@ For classifying of disease according to the symptoms is "classification approach
 2.Data Requirement:
 EHR data of patients with Disease-specific labeling.
 
-3.Data Collection:
-Hospitals, Doctors are responsible for Data Collection Methods. 
-Need to maintain accurate information with respect to patient-specific disease while maintaining EHR.
-
-4.Data Understanding and Preparation:
-One should have a clear understanding of the data to perform further analysis.EHR data should be recorded in a proper format with user friendly labels and a file with clear description of labels should be  documented for better understanding of the dataset.
-In the Data preparation stage one should basically check for null values or NA values, duplicates and missing values,Checking the Formats of data . We have to be careful while dealing with duplicates as the few symptoms of different diseases might be same for example fever is common for malaria and typhoid but the temperature and the duration of fever might change. For predictive approach, one must go through the feature that influence the results, for example feature extraction helps in reducing the dimensions of large datasets. 
-
-Generally the following are few main features of the data, 
+The EHR data of patients who visited doctors is required.
+The data should contain the following data
 Patient Name,  
 Date, 
-Time, 
-Cause of Consultancy, 
+Time of consultation, 
 Symptoms,  
-Previous consulting History, 
-Diagnosis Tests (Previous Reports), 
-Prescribed Diagnosis (Present), 
-criticality of Condition,  
+prescribed diagnosis,
+The criticality of Condition,  
 Pharmacy Prescriptions, etc.
 
-5.Modeling and Evaluation:
-We have 2 case studies here one is to predict the disease based on EHR and the other is to classify the disease according to symptoms.The data is first divided into training ans test data sets.the training data set is given to the algorithm to get trained for different ML algorithms.Once the modeling is done, we move to the next step evaluation to determine the quality of the model.As we know about 2 stages of testing both descriptive and predictive models are evaluated to check the basic functionality of the algorithm, is it working properly to solve the problem ? the next phase to run the statistical testing of the performance. The algorithm which satisfies the evaluation methodologies can be considered as the proper algorithm to solve the problem. The feedback of the performance is taken after implementing the algorithm and if any changes are required, the changes will be implemented and the cycle repeats till we satisfy the conditions in the problem statement.
+
+Data Collection:
+The EHR data is collected from different hospitals, clinics and online consultations. 
+EHR data should be collected from the patient's first to the recent consultation, 
+the data should be accurate as the data is very sensitive. Many diseases have similar 
+symptoms which may differ in severity, timings, age of the patient, etc. The data collected 
+should cover different cases with the same disease among different age groups,symptoms, etc.
+
+4.Data Understanding and Preparation:
+The person should have a clear understanding of the business problem, 
+data collection and should take steps towards data preparation accordingly. 
+The data collected should represent a business problem. The data collected 
+should be related to diseases, symptoms, and diagnostics. The data collected 
+should be named under proper formats with user-friendly labels and should 
+have a text file describing the labels of the data collected for better understanding. 
+A statistical analysis that includes measuring mean, median, standard deviation,
+correlation of feature should be carried out on different features available in the dataset, 
+visualization of data in different graphs helps in understanding the diversity of the data set. 
+In our case study, the graphs help us in understanding the data collected in different age groups,
+symptoms, and diseases. Once a person understands the data well, the next step is data preparation. 
+The data collected might generally have a few common problems like having null or NA values, 
+missing values, duplicate values and checking the format of the data. These must be dealt with 
+before moving before drawing insights into the data collected. Once the basic problems mentioned 
+above are eliminated, further steps can be performed on the data like feature extraction,
+dimensionality reduction. etc, These steps help us to eliminate the features of the data which is the
+least priority and boosts the accuracy and efficiency of the analysis. 
